@@ -5,11 +5,11 @@
 </target>
 <target name="run" depends="first">
 	<mkdir dir="build/classes"/>
-	<javac includeantruntime="false" srcdir="./src/second" destdir="./build/classes"/>
+	<javac includeantruntime="false" classpath="/usr/local/JUNIT/junit-4.10.jar" srcdir="./src/second" destdir="./build/classes"/>
 </target>
 <target name="first" depends="clean">
 	<mkdir dir="build/classes"/>
-	<javac includeantruntime="false" srcdir="./src/first" destdir="./build/classes"/>
+	<javac includeantruntime="false" classpath="/usr/local/JUNIT/junit-4.10.jar" srcdir="./src/first" destdir="./build/classes"/>
 </target>
 <target name="compile" depends="clean">
 	<mkdir dir="build/classes"/>
