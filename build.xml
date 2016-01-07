@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project default="first" name="compile the java project">
+<project default="second" name="compile the java project">
 <target name="clean">
 	<delete dir="build"/>
 </target>
 <target name="first" depends="second">
-	<javac includeantruntime="false" classpath="/usr/local/JUNIT/junit-4.10.jar" srcdir="./src/second" destdir="./build/classes"/>
+	<javac includeantruntime="false" classpath="/usr/local/JUNIT/junit-4.10.jar" srcdir="." destdir="."/>
 </target>
 <target name="second" depends="clean">
 	<mkdir dir="build/classes"/>
-	<javac includeantruntime="false" classpath="/usr/local/JUNIT/junit-4.10.jar" srcdir="./src/first" destdir="./build/classes"/>
-	<copy file="./build/classes/TestJunit.class" tofile="./src/second/TestJunit.class"/>
+	<javac includeantruntime="false" classpath="/usr/local/JUNIT/junit-4.10.jar" srcdir="." destdir="."/>
 </target>
 <target name="compile" depends="clean">
 	<mkdir dir="build/classes"/>
