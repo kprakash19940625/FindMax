@@ -8,11 +8,3 @@ public class TestJunit {
       assertEquals(4,output);
    }
 }
-public class Test2 {
-   @Test
-   public void testAdd(){
-      FindMax test = new FindMax();
-      int output = test.findmax(new int[]{-1,0,3,2});
-      assertEquals(2,output);
-   }
-}
