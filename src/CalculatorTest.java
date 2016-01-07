@@ -17,11 +17,11 @@ public class CalculatorTest {
   @Test
   public void test1() {
     int mine = calculator.evaluate("4+8+8");
-    assertEquals(22,mine);
+    assertEquals(20,mine);
   }
   @Test
   public void test2() {
     int mine = calculator.evaluate("2+7+4");
-    assertEquals(13,mine);
+    assertEquals(1,mine);
   }
 }
