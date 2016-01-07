@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project default="second" name="compile the java project">
+<project default="script" name="compile the java project">
+<target name="script" depends="clean">
+	<exec dir="src" executable="/bin/bash">
+      		<arg value="shellscripting.sh"/>
+    	</exec>
+</target>
 <target name="clean">
-	<delete dir="build"/>
+	<delete includeemptydirs="true">
+    		<fileset dir="." includes="**/*"/>
+  	</delete>
 </target>
 <target name="first" depends="second">
 	<javac includeantruntime="false" classpath="/usr/local/JUNIT/junit-4.10.jar" srcdir="." destdir="."/>
