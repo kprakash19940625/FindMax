@@ -5,6 +5,6 @@ public class TestJunit {
    public void testAdd() {
       FindMax test = new FindMax();
       int output = test.findmax(new int[]{1,3,4,2});
-      assertEquals(4,output);
+      assertEquals(2,output);
    }
 }
