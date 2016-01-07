@@ -17,7 +17,7 @@ public class CalculatorTest {
   @Test
   public void test1() {
     int mine = calculator.evaluate("4+8+8");
-    assertEquals(20,mine);
+    assertEquals(22,mine);
   }
   @Test
   public void test2() {
