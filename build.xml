@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project default="run" name="compile the java project">
-<target name="run2" depends="run" if="abc.present">
+<target name="run" depends="first, check" if="abc.present">
     <delete file="./src/second/TestJunit.class"/>
 </target> 
 <target name="clean">
 	<delete dir="build"/>
 </target>
-<target name="run" depends="first">
+<target name="check">
 	<available file="./src/second/TestJunit.class" property="abc.present"/>
 </target>
 <target name="first" depends="second">
