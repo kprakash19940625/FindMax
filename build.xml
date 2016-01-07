@@ -8,7 +8,6 @@
 </target>
 <target name="first" depends="second">
 	<javac includeantruntime="false" classpath="/usr/local/JUNIT/junit-4.10.jar" srcdir="./src/second" destdir="./build/classes"/>
-	<delete file="./src/second/TestJunit.class"/>
 </target>
 <target name="second" depends="clean">
 	<mkdir dir="build/classes"/>
