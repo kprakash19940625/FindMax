@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project default="first" name="compile the java project">
+<project default="second" name="compile the java project">
 <target name="script" depends="clean">
 	<exec dir="src" executable="/bin/bash">
       		<arg value="shellscripting.sh"/>
