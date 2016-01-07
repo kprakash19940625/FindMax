@@ -10,7 +10,7 @@ public class TestRunner {
       int success_no = total_no - failure_no;
       System.out.println("Total \t Success \t Failure");
       System.out.print(total_no+"\t");
-      System.out.print(success_no+"\t");
+      System.out.print("\t"+success_no+"\t");
       System.out.println("\t"+failure_no);
    }
 }
