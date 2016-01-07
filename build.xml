@@ -14,7 +14,6 @@
 	<javac includeantruntime="false" classpath="/usr/local/JUNIT/junit-4.10.jar" srcdir="." destdir="."/>
 </target>
 <target name="second" depends="clean">
-	<mkdir dir="build/classes"/>
 	<javac includeantruntime="false" classpath="/usr/local/JUNIT/junit-4.10.jar" srcdir="." destdir="."/>
 </target>
 <target name="compile" depends="clean">
