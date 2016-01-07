@@ -9,5 +9,10 @@ public class TestRunner {
          System.out.println(failure.toString());
       }
       System.out.println(result.wasSuccessful());
+      Result result = JUnitCore.runClasses(Test2.class);
+      for (Failure failure : result.getFailures()) {
+         System.out.println(failure.toString());
+      }
+      System.out.println(result.wasSuccessful());
    }
 }
