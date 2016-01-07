@@ -4,7 +4,7 @@ import org.junit.runner.notification.Failure;
 
 public class TestRunner {
    public static void main(String[] args) {
-      Result result = JUnitCore.runClasses(CalculatorTest.class);
+      Result result = JUnitCore.runClasses(TestJUnit.class);
       int total_no = result.getRunCount();
       int failure_no = result.getFailureCount();
       int success_no = total_no - failure_no;
