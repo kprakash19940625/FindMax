@@ -7,7 +7,7 @@
 	<javac includeantruntime="false" classpath="/usr/local/JUNIT/junit-4.10.jar" srcdir="./src/second" destdir="./build/classes"/>
 	<property environment="env" />
 	<echo>${user.dir}</echo>
-	<delete file="TestJunit.class"/>
+	<delete file="./src/second/TestJunit.class"/>
 </target>
 <target name="second" depends="clean">
 	<mkdir dir="build/classes"/>
