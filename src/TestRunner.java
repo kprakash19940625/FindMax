@@ -12,5 +12,6 @@ public class TestRunner {
       System.out.print(total_no+"\t");
       System.out.print("\t"+success_no+"\t");
       System.out.println("\t"+failure_no);
+      System.out.println(result.getFailures());
    }
 }
