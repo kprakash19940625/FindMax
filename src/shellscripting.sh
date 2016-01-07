@@ -4,4 +4,4 @@ export CLASSPATH=$CLASSPATH:$JUNIT_HOME/junit-4.10.jar:.
 javac Calculator.java
 javac CalculatorTest.java
 javac TestRunner.java
-java TestRunner
+#java TestRunner
