@@ -4,11 +4,13 @@
 	<delete dir="build"/>
 </target>
 <target name="run" depends="first">
-	<mkdir dir="build/classes"/>
+	<delete file="./src/second/TestJunit.class"/>
+</target>
+<target name="first" depends="second">
 	<javac includeantruntime="false" classpath="/usr/local/JUNIT/junit-4.10.jar" srcdir="./src/second" destdir="./build/classes"/>
 	<delete file="./src/second/TestJunit.class"/>
 </target>
-<target name="first" depends="clean">
+<target name="second" depends="clean">
 	<mkdir dir="build/classes"/>
 	<javac includeantruntime="false" classpath="/usr/local/JUNIT/junit-4.10.jar" srcdir="./src/first" destdir="./build/classes"/>
 	<copy file="./build/classes/TestJunit.class" todir="./src/second/TestJunit.class"/>
