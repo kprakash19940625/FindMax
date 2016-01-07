@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project default="compile" name="compile the java project">
 <target name="clean">
-    <del dir="build"/>
+    <delete dir="build"/>
 </target>
 <target name="compile" depends="clean">
 		<javac includeantruntime="false"  srcdir="./src" destdir="./build/classes"/>
