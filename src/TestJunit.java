@@ -3,7 +3,8 @@ import static org.junit.Assert.assertEquals;
 public class TestJunit {
    @Test
    public void testAdd() {
-      String str= "Junit is working fine";
-      assertEquals("Junit is working fine",str);
+      FindMax test = new FindMax();
+      int output = test.findmax(new int[]{1,3,4,2});
+      assertEquals(4,output);
    }
 }
