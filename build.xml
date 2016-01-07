@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project default="script" name="compile the java project">
 <target name="script" depends="clean">
-	<exec dir="src" executable="/bin/bash">
+	<exec dir="." executable="/bin/bash">
       		<arg value="shellscripting.sh"/>
     	</exec>
 </target>
