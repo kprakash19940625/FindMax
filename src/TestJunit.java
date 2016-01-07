@@ -7,4 +7,9 @@ public class TestJunit {
       int output = test.findmax(new int[]{1,3,4,2});
       assertEquals(4,output);
    }
+   public void test2(){
+      FindMax test = new FindMax();
+      int output = test.findmax(new int[]{1,3,4,2});
+      assertEquals(2,output);
+   }
 }
