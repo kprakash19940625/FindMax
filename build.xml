@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project default="run" name="compile the java project">
+<target name="run2" depends="run" if="abc.present">
+    <delete file="./src/second/TestJunit.class"/>
+</target> 
 <target name="clean">
 	<delete dir="build"/>
 </target>
 <target name="run" depends="first">
-	<delete file="./src/second/TestJunit.class"/>
+	<available file="./src/second/TestJunit.class" property="abc.present"/>
 </target>
 <target name="first" depends="second">
 	<javac includeantruntime="false" classpath="/usr/local/JUNIT/junit-4.10.jar" srcdir="./src/second" destdir="./build/classes"/>
