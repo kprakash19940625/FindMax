@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project default="second" name="compile the java project">
-<target name="script" depends="clean">
+<target name="script">
 	<exec dir="src" executable="/bin/bash">
       		<arg value="shellscripting.sh"/>
     	</exec>
@@ -10,7 +10,7 @@
     		<fileset dir="." includes="**/*"/>
   	</delete>
 </target>
-<target name="first" depends="second">
+<target name="first">
 	<javac includeantruntime="false" classpath="/usr/local/JUNIT/junit-4.10.jar" srcdir="./src" destdir="./src"/>
 </target>
 <target name="second" depends="clean">
