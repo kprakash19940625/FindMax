@@ -5,14 +5,10 @@
 </target>
 <target name="first" depends="second">
 	<javac includeantruntime="false" classpath="/usr/local/JUNIT/junit-4.10.jar" srcdir="./src/second" destdir="./build/classes"/>
-	<property environment="env" />
-	<echo>${user.dir}</echo>
-	<delete file="./src/second/TestJunit.class"/>
 </target>
 <target name="second" depends="clean">
 	<mkdir dir="build/classes"/>
 	<javac includeantruntime="false" classpath="/usr/local/JUNIT/junit-4.10.jar" srcdir="./src/first" destdir="./build/classes"/>
-	
 </target>
 <target name="compile" depends="clean">
 	<mkdir dir="build/classes"/>
