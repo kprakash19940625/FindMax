@@ -12,7 +12,7 @@ public class CalculatorTest {
   @Test
   public void test() {
     int sum = calculator.evaluate("1+2+3");
-    assertEquals(8, sum);
+    assertEquals(6, sum);
   }
   @Test
   public void test1() {
